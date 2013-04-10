@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Getting Started with Self-Tracking</title>
+  
+  <meta name="description" content="An introduction to self-tracking: tools and tips">
+  <meta name="author" content="Jana E. Beck">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  
+  <!-- Core and extension CSS files -->
+  <link rel="stylesheet" href="../core/deck.core.css">
+  <link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="../extensions/status/deck.status.css">
+  <link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="../extensions/scale/deck.scale.css">
+  
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" href="../themes/style/web-2.0.css">
+
+  <link rel="stylesheet" href="custom.css"
+  
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" href="../themes/transition/vertical-slide.css">
+
+  <!-- D3 -->
+
+  <script type="text/javascript" src="../d3.v3.js"></script>
+  
+  <script src="../modernizr.custom.js"></script>
+</head>
+
+<body>
+
+  <div class="deck-container shadow" style="width:65%;">
+    <!-- Begin slides -->
+    <section class="slide" id="title-slide">
+      <h2>Getting Started with</h2>
+      <h1>Self-Tracking</h1>
+    </section>
+
+    <section class="slide" id="three-questions">
+      <h2>The 3 Questions</h2>
+      <ul>
+        <li class="slide" id="three-questions-what">What did you do?
+          <ul class="blank">
+            <li class="slide" id="three-questions-what2">&rarr; What tools do you have access to?</li>
+          </ul>
+        </li>
+        <li class="slide" id="three-questions-how">How did you do it?
+          <ul class="blank">
+            <li class="slide" id="three-questions-how2">&rarr; Active or passive tracking? For how long?</li>
+          </ul>
+        </li>
+        <li class="slide" id="three-questions-learn">What did you learn?
+          <ul class="blank">
+            <li class="slide" id="three-questions-learn2">&rarr; Motivation.
+              <ul>
+                <li>Curiosity?</li>
+                <li>Specific improvement in a health or behavior outcome?</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="tools">
+      <h1>Tools</h1>
+    </section>
+
+    <section class="slide" id="tools-research">
+      <h2>Researching Tools</h2>
+      <ul>
+        <li class="slide" id="tools-research1">Is it <a href="#period-trackers">designed for you</a>?</li>
+        <li class="slide" id="tools-research2"><a href="#correlation">Data export?</a></li>
+        <li class="slide" id="tools-research3">...and the usual suspects:
+          <ul>
+            <li>cost</li>
+            <li>ease of use</li>
+            <li>community</li>
+            <li>etc.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="my-tools1">
+      <h2>Tools I Use (or Have Used)</h2>
+      <ul>
+        <li class="slide" id="my-tools-diabetes">diabetes devices
+          <ul>
+            <li>continuous glucose monitor (CGM)</li>
+            <li>fingerstick blood glucose meter</li>
+            <li>insulin pump</li>
+          </ul>
+        </li>
+        <li class="slide" id="my-tools-general">general purpose
+          <ul>
+            <li><a href="http://daytum.com/">Daytum</a></li>
+            <li><a href="http://your.flowingdata.com/">your.flowingdata</a></li>
+            <li>Notational Velocity (<a href="http://brettterpstra.com/projects/nvalt/">nvALT fork</a>) + <a href="http://simplenote.com/">Simplenote</a> (for syncing)</li>
+          </ul>
+        </li>
+      </ul>
+      <a class="left-anchor" href="#my-tools1">My Tools 1</a>
+    </section>
+
+    <section class="slide" id="my-tools2">
+      <h2>Tools I Use (or Have Used)</h2>
+      <ul>
+        <li class="slide" id="my-tools-health">health-related
+          <ul>
+            <li><a href="http://www.tactiosoft.com/en/products/targetweight">TargetWeight</a></li>
+            <li><a href="http://monthlyinfo.com/">MonthlyInfo</a> (menstrual cycle)</li>
+            <li><a href="http://goodtohear.co.uk/happiness">Happiness</a> (mood tracking)</li>
+          </ul>
+        </li>
+        <li class="slide" id="my-tools-sleep">sleep
+          <ul>
+            <li><a href="http://www.sleepcycle.com/">Sleep Cycle</a></li>
+            <li><a href="http://www.myzeo.com/sleep/">Zeo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="left-anchor" href="#my-tools2">My Tools 2</a>
+    </section>
+
+    <section class="slide" id="my-tools3">
+      <h2>Tools I Use (or Have Used)</h2>
+      <ul>
+        <li class="slide" id="my-tools-money">money
+          <ul>
+            <li><a href="https://thebirdy.com/">The Birdy</a></li>
+          </ul>
+        </li>
+        <li class="slide" id="my-tools-plus">Tracking + Motivation
+          <ul>
+            <li><a href="#beeminder">Beeminder</a></li>
+            <li><a href="http://lift.do/">Lift.do</a></li>
+            <li><a href="http://fanzter.com/products/streaks">Streaks</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="left-anchor" href="#my-tools3">My Tools 3</a>
+    </section>
+
+    <section class="slide" id="time-and-work">
+      <h2>Tracking Time (and/or Work)</h2>
+      <ul>
+        <li class="slide" id="passive-watchers">Passive software watchers:
+          <ul>
+            <li><a href="https://www.rescuetime.com/">RescueTime</a></li>
+            <li><a href="https://itunes.apple.com/us/app/finch/id456099613?mt=12">Finch</a></li>
+          </ul>
+        </li>
+        <li class="slide" id="active-loggers">Active time loggers (many iPhone and Android apps)</li>
+        <li class="slide" id="my-time-tracking">My solution: a <a href="http://www.pomodorotechnique.com/">Pomodoro</a> timer that automatically logs successful Pomodoros to your.flowingdata (via Twitter)
+          <ul>
+            <li>commit to one</li>
+            <li>log everything that is best done with focus</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="active-vs-passive">
+      <h2>Active vs. Passive Tracking</h2>
+      <ul>
+        <li class="slide" id="active">Active
+          <ul>
+            <li class="slide hide" id="paper">Paper logging
+              <p style="display:none;" class="ib">
+                (<em>really?!?</em>)
+                <img width="332px" style="float:right;" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Paris_Tuileries_Garden_Facepalm_statue.jpg/800px-Paris_Tuileries_Garden_Facepalm_statue.jpg" />
+              </p>
+            </li>
+            <li class="slide" id="spreadsheet">Simple spreadsheet or <a href="http://quantifiedself.com/2009/05/diy-mobile-self-tracker/">Google form</a></li>
+            <li class="slide" id="apps">General or specific purpose apps and devices</li>
+          </ul>
+        </li>
+        <li class="slide" id="passive">Passive
+          <ul>
+            <li><a href="http://www.fitbit.com/">FitBit</a></li>
+            <li><a href="http://www.nike.com/us/en_us/c/nikeplus-fuelband">Nike+ FuelBand</a></li>
+            <li><a href="http://www.last.fm/home">Last.fm</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="caveat-tracker">
+      <h2>Caveat Tracker</h2>
+      <h3>(Or: Things to Be Careful Of)</h3>
+      <ul class="blank">
+        <li class="slide hide" id="caveat-tracker-mania">Beginner's mania
+          <ul style="display:none;" class="ib blank">
+            <li>track ALL the things! <img style="float:right;" src="img/all-the-things.png" /></li>
+          </ul>
+        </li>
+        <li class="slide" id="caveat-tracker3">Can be particularly harmful if you're aiming to change something (health parameter, behavior)</li>
+        <li class="slide" id="caveat-tracker4">Self-tracking vs. self-surveillance</li>
+        <li class="slide" id="burnout">Tracking burnout (and potential solutions)
+          <ul>
+            <li>Scheduled time off</li>
+            <li>Limited (initial) tracking period (weeks? months?)</li>
+            <li>Track something fun!</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="data">
+      <h2>Play with Your Data</h2>
+      <ul>
+        <li class="slide hide" id="data-in-app">In-app visualization and summary tools
+          <ul style="display:none;" class="ib blank">
+            <li>e.g., my coffee consumption<img style="float:right;" src="img/yfd-coffee-March.png" /></li>
+            <li><img src="img/yfd-coffee-categories.png" /></li>
+          </ul>
+        </li>
+        <li class="slide" id="data-download">Download your data and start simple:
+          <ul>
+            <li>Bar or line graph</li>
+            <li>Histogram</li>
+            <li>Then get <a href="#fancy1">fancy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="data-viz">
+      <h2>Data Visualization Tools</h2>
+      <ul>
+        <li class="slide hide" id="data-viz-non-coders">For non-coders:
+          <ul style="display:none;">
+            <li>Excel, Numbers, Open Office, etc.</li>
+            <li><a href="http://www.quadrigram.com/">Quadrigram</a></li>
+            <li><a href="http://processing.org/">Processing</a> (programming lite)</li>
+          </ul>
+        </li>
+        <li class="slide" id="data-viz-coders">For coders:
+          <ul>
+            <li><a href="http://www.r-project.org/">R</a> (open-source statistical software; use <a href="http://ggplot2.org/">ggplot2</a> for graphics)</li>
+            <li>Python:
+              <ul>
+                <li>numpy, scipy, matplotlib, pandas</li>
+                <li><a href="https://github.com/ContinuumIO/Bokeh">Bokeh</a> (ggplot-like, new project)</li>
+              </ul>
+            </li>
+            <li>JavaScript:
+              <ul>
+                <li><a href="http://d3js.org/">D3 (Data-Driven Documents)</a></li>
+                <li><a href="http://processingjs.org/">Processing.js</a> (for those familiar with <a href="http://processing.org/">Processing)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="examples">
+      <h1>Examples</h1>
+    </section>
+
+    <section class="slide" id="period-trackers">
+      <h2>Period Trackers</h2>
+      <br/><br/>
+        <p class="ib">
+          <img width="332px" src="img/iPeriod.png" alt="Calendar view from iPeriod Ultimate iPhone app showing period and fertile days" />
+          &nbsp;&nbsp;vs.&nbsp;&nbsp;
+          <img width="332px" src="img/MonthlyInfo.png" alt="Calendar view from Monthly Info showing only start of period" />
+        </p>
+      <a class="left-anchor" href="#tools-research1">back</a>
+    </section>
+
+    <section class="slide" id="correlation">
+      <h2>Crazy Correlations</h2>
+      <div class="d3" id="correlation-graph"></div>
+      <a class="left-anchor" href="#tools-research2">back</a>
+    </section>
+
+    <section class="slide" id="beeminder">
+      <h2><a href="https://www.beeminder.com/">Beeminder</a></h2>
+      <img src="img/Beeminder.png" style="float:right;" />
+      <br/>
+      <ul class="hide">
+        <li>good for numeric goals</li>
+        <li>lose weight, exercise more, smoke less, etc.</li>
+        <li>pay them money if you fail at your goal</li>
+      </ul>
+      <br/>
+      <img src="img/Beeminder-passive.png" />
+      <a class="left-anchor" href="#my-tools-plus">back</a>
+    </section>
+
+    <section class="slide" id="beeminder-ex1">
+      <br/>
+      <h3>Beeminding My Running</h3>
+      <br/>
+      <img width="550px" src="img/my-running-Beeminder.png" />
+      <a class="left-anchor" href="#my-tools-plus">back</a>
+    </section>
+
+    <section class="slide" id="beeminder-ex2">
+      <br/>
+      <h3>Beeminding a Noisy Number</h3>
+      <br/><br/>
+      <img src="img/my-random-Beeminder.png" />
+      <a class="left-anchor" href="#my-tools-plus">back</a>
+    </section>
+
+    <section class="slide" id="fancy1">
+      <h2>Fancy 1</h2>
+      <h3>Blood Glucose Heatmaps</h3>
+      <br/>
+      <p class="ib">
+        <img width="40%" src="img/hour_heatmap.png" />&nbsp;&nbsp;&nbsp;
+        <img width="40%" src="img/day_heatmap.png" />
+      </p>
+      <a class="left-anchor" href="#data-download">back</a>
+    </section>
+
+    <section class="slide" id="fancy2">
+      <h2>Fancy 2</h2>
+      <h3>Blood Glucose Violin Plots</h3>
+      <br/>
+      <p class="ib">
+        <img width="40%" src="img/dexcom_violin_carb.png" />&nbsp;&nbsp;&nbsp;
+        <img width="40%" src="img/dexcom_violin_year.png" />
+      </p>
+      <a class="left-anchor" href="#data-download">back</a>
+    </section>
+
+    <section class="slide" id="contact-info">
+      <h2>Contact Me</h2>
+      <br/><br/>
+      <ul>
+        <li><a href="http://jebeck.github.io/">My blog-shaped thing</a></li>
+        <li><a href="mailto:jana.eliz.beck@gmail.com">E-mail me</a></li>
+      </ul>
+      <p>Slides created with <a href="http://imakewebthings.com/deck.js/">deck.js</a> and available <a href="">here</a>.</p>
+    </section>
+
+    <!-- deck.navigation snippet -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- deck.hash snippet -->
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+    <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../jquery-1.7.2.min.js"><\/script>')</script>
+
+    <!-- Deck Core and extensions -->
+    <script src="../core/deck.core.js"></script>
+    <script src="../extensions/hash/deck.hash.js"></script>
+    <script src="../extensions/menu/deck.menu.js"></script>
+    <script src="../extensions/goto/deck.goto.js"></script>
+    <script src="../extensions/status/deck.status.js"></script>
+    <script src="../extensions/navigation/deck.navigation.js"></script>
+    <script src="../extensions/scale/deck.scale.js"></script>
+
+    <!-- Initialize the deck -->
+    <script>
+      $(function() {
+        $.deck('.slide');
+      });
+    </script>
+
+    <!-- toggle visibility -->
+    <script>
+      $('.hide').click(function() {
+        var $lst = $(this).children();
+        $lst.toggle();
+      });
+    </script>
+
+    <!-- D3 scripts -->
+    <script type="text/javascript">
+
+        var w = 800;
+
+        var h = 500;
+                
+        var padding = 70;
+
+        var dataset = [
+          [177.67, 19.6],
+          [70.46, 24.4],
+          [121.95, 33.7],
+          [41.99, 25.565],
+          [39.91, 15.4],
+          [1.99, 15.8],
+          [21.76, 17.05],
+          [26.79, 21.978],
+          [0, 30.3],
+          [91.99, 33.75],
+          [23.43, 34.498],
+          [29.92, 21.355],
+          [32.89, 27.1],
+          [45.26, 16.578],
+          [65.67, 36.6],
+          [8, 36.26],
+          [4.23, 21.64],
+          [0, 28.755],
+          [0, 29.825],
+          [53.66, 25.1],
+          [8.74, 40.3],
+          [0, 23.7],
+          [13.63, 16.35],
+          [5, 20.4],
+          [8.59, 16.075],
+          [0, 25.1],
+          [20.06, 15.1],
+          [43.25, 30.765],
+          [2.99, 30.898],
+          [4.99, 23],
+          [9.76, 31.15]
+        ];
+
+        var svg = d3.select("#correlation-graph")
+                    .append("svg")
+                    .attr("width", w)
+                    .attr("height", h);
+
+        var xScale = d3.scale.linear().nice()
+                   .domain([0, d3.max(dataset, function(d) { return d[0]; })])
+                   .range([padding + 10, w - padding]);
+
+        var yScale = d3.scale.linear().nice()
+                   .domain([0, d3.max(dataset, function(d) { return d[1]; })])
+                   .range([h - padding, padding]);
+
+        svg.selectAll("circle")
+           .data(dataset)
+           .enter()
+           .append("circle")
+           .attr("cx", function(d) {
+                return xScale(d[0]);
+           })
+           .attr("cy", function(d) {
+                return yScale(d[1]);
+           })
+           .attr("r", 5)
+           .attr("fill", "blue");
+
+        var xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+
+        var yAxis = d3.svg.axis().scale(yScale).orient("left");
+
+        svg.append("g")
+            .attr("class", "axis")  //Assign "axis" class
+            .attr("transform", "translate(0," + (h - padding) + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "axis")
+            .attr("transform", "translate(" + padding + ",0)")
+            .call(yAxis);
+
+        svg.append("text")
+            .attr("x", w / 2 )
+            .attr("y",  h - 10 )
+            .style("text-anchor", "middle")
+            .text("Dollars Spent");
+
+        svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", 0 - h/2 )
+            .attr("y", 20 )
+            .style("text-anchor", "middle")
+            .text("Total Daily Dose of Insulin");
+
+    </script>
+
+  </div>
+
+</body>
+</html>

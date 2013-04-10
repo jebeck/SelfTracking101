@@ -1,0 +1,66 @@
+.blank > li {
+	list-style-type: none;
+}
+
+img {
+	border-style: solid !important;
+	border-width: 10px !important;
+	border-color: transparent !important;
+   	-moz-box-shadow:     0 0 10px #000000;
+   	-webkit-box-shadow:  0 0 10px #000000;
+   	box-shadow:          0 0 10px #000000;
+}
+
+.ib {
+	text-align: center;
+}
+
+.ib img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body {
+	background-image:url('img/textured_paper.png');
+}
+
+.shadow {
+   -moz-box-shadow:     0 0 10px #000000;
+   -webkit-box-shadow:  0 0 10px #000000;
+   box-shadow:          0 0 10px #000000;
+}
+
+.deck-status {
+	margin-right: 10px !important;
+}
+
+.left-anchor {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 3;
+	margin: 0px 0px 0px 10px;
+	color: #888;
+}
+
+.d3 {
+	text-align: center;
+}
+
+text {
+	font-family: sans-serif;
+	font-size: 24px;
+	fill: #888;
+}
+
+.axis path,
+.axis line {
+  	fill: none;
+  	stroke: black;
+  	shape-rendering: crispEdges;
+}
+
+.axis text {
+  	font-family: sans-serif;
+  	font-size: 18px;
+}
